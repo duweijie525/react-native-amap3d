@@ -36,7 +36,7 @@ export interface CircleProps {
 }
 
 // @ts-ignore
-export default requireNativeComponent("AMapCircle", {
+export default requireNativeComponent<CircleProps>("AMapCircle", {
   propTypes: {
     ...ViewPropTypes,
     coordinate: LatLngPropType.isRequired,
@@ -44,6 +44,6 @@ export default requireNativeComponent("AMapCircle", {
     strokeWidth: PropTypes.number,
     strokeColor: ColorPropType,
     fillColor: ColorPropType,
-    zIndex: PropTypes.number
-  }
+    zIndex: PropTypes.number,
+  },
 });

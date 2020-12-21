@@ -31,13 +31,13 @@ export interface Polygon {
 }
 
 // @ts-ignore
-export default requireNativeComponent("AMapPolygon", {
+export default requireNativeComponent<Polygon>("AMapPolygon", {
   propTypes: {
     ...ViewPropTypes,
     coordinates: PropTypes.arrayOf(LatLngPropType).isRequired,
     strokeWidth: PropTypes.number,
     strokeColor: ColorPropType,
     fillColor: ColorPropType,
-    zIndex: PropTypes.number
-  }
+    zIndex: PropTypes.number,
+  },
 });

@@ -21,7 +21,7 @@ export interface HeatMapProps {
 }
 
 // @ts-ignore
-export default requireNativeComponent("AMapHeatMap", {
+export default requireNativeComponent<HeatMapProps>("AMapHeatMap", {
   propTypes: {
     ...ViewPropTypes,
 
@@ -38,6 +38,6 @@ export default requireNativeComponent("AMapHeatMap", {
     /**
      * 透明度
      */
-    opacity: PropTypes.number
-  }
+    opacity: PropTypes.number,
+  },
 });
