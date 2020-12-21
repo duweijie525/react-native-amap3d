@@ -5,6 +5,7 @@ build/
 xcuserdata/
 Pods/
 lib/js/
+.DS_Store
 
 *.iml
 *.xcworkspace

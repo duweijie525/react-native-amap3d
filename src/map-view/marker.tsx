@@ -15,7 +15,7 @@ export interface MarkerProps {
   /**
    * 坐标
    */
-  coordinate: LatLng;
+  coordinate?: LatLng;
 
   /**
    * 标题，作为默认的选中弹出显示
@@ -135,7 +135,7 @@ export default class Marker extends Component<MarkerProps> {
   static propTypes = {
     ...ViewPropTypes,
     ...mapEventsPropType(events),
-    coordinate: LatLngPropType.isRequired,
+    coordinate: LatLngPropType,
     title: PropTypes.string,
     description: PropTypes.string,
     color: Platform.select({
